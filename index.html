@@ -17,28 +17,38 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <nav>
-            <span class="text-large bold" id="nav-logo">Hey Jerrod</span>
+            <span class="large-text bold" id="nav-logo">Hey Jerrod</span>
         </nav>
-        <div id="user-information">
-            <div class="row">
-                <img id="user-image" />
-                <div id="media-icons">
-                    <img onClick="handleGenerateNewUser();" class="svg-medium" alt="book icon"src="assets/book.svg" />
-                    <img class="svg-medium" alt="brochure icon"src="assets/brochure.svg" />
-                    <img class="svg-medium" alt="mail icon"src="assets/mail.svg" />
-                    <img class="svg-medium" alt="telephone icon"src="assets/telephone.svg" />
-                    <img class="svg-medium" alt="cake icon"src="assets/cake.svg" />
-                    <img class="svg-medium" alt="key icon"src="assets/key.svg" />
+        <main>
+            <div id="user-information">
+                <div class="row">
+                    <img id="user-image" />
+                    <div id="media-icons">
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="book icon"src="assets/book.svg" />
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="brochure icon"src="assets/brochure.svg" />
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="mail icon"src="assets/mail.svg" />
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="telephone icon"src="assets/telephone.svg" />
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="cake icon"src="assets/cake.svg" />
+                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="key icon"src="assets/key.svg" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column" id="user-details">
+                        <span class="large-text" id="user-name"></span>
+                        <span class="small-text" id="user-text"></span>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column" id="user-details">
-                    <span class="large-text" id="user-name"></span>
-                    <span class="small-text" id="user-text"></span>
-                </div>
+            <div id="contact-user">
+                <form class="column" id="contact-user">
+                    <span class="medium-text">Contact Me</span>
+                    <input class="small-input" placeholder="Name" name="name" type="text" />
+                    <input class="small-input" placeholder="Email" name="email" type="text" />
+                    <textarea class="large-input" placeholder="How can I help?" name="message" type="text"></textarea>
+                    <input class="primary-button" value="Submit" type="submit" />
+                </form>
             </div>
-        </div>
-        <div id="contact-user"></div>
+        </main>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="./app.js" async defer></script>
     </body>
