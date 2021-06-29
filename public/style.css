@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+@import url("//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
 body,
 html,
 input,
@@ -23,6 +23,18 @@ main {
   max-width: 1200px;
   margin: 20px auto;
   justify-content: space-between;
+  min-height: 100%;
+}
+
+#footer-links > a {
+  margin: 10px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#footer-links {
+  margin: 0 auto;
+  max-width: 240px;
 }
 
 #media-icons {
