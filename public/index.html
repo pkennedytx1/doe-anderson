@@ -43,7 +43,7 @@
             </div>
             <div id="contact-user">
                 <form onSubmit="event.preventDefault();handleFormSubmit(event);" class="column" id="contact-user">
-                    <span class="medium-text">Contact Me<span id="form-error"></span></span>
+                    <span class="medium-text">Contact Me<span id="form-error"></span><span id="form-success"></span></span>
                     <input class="small-input" placeholder="Name" name="name" type="text" />
                     <input class="small-input" placeholder="Email" name="email" type="text" />
                     <textarea class="large-input" placeholder="How can I help?" name="message" type="text"></textarea>
@@ -55,6 +55,13 @@
                 </div>
             </div>
         </main>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+        <script>
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="./app.js" async defer></script>
     </body>
