@@ -18,10 +18,11 @@ nav {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 40px;
   max-width: 1200px;
   margin: 20px auto;
+  justify-content: space-between;
 }
 
 #media-icons {
@@ -68,12 +69,27 @@ main {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.primary-button {
+    border-radius: 0;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40px;
 }
 
 #user-image {
@@ -83,16 +99,30 @@ main {
   border-radius: 100px;
 }
 
+#user-information {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 #contact-user {
   gap: 20px;
+  width: 100%;
 }
+
+#user-name {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+      margin: 20px;
+      flex-direction: column;
+    }
+  }
 
 @media only screen and (max-width: 1200px) {
   main {
     margin: 20px;
-  }
-
-  .row {
-    justify-content: center;
   }
 }

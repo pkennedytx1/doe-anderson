@@ -21,32 +21,38 @@
         </nav>
         <main>
             <div id="user-information">
-                <div class="row">
-                    <img id="user-image" />
-                    <div id="media-icons">
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="book icon"src="assets/book.svg" />
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="brochure icon"src="assets/brochure.svg" />
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="mail icon"src="assets/mail.svg" />
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="telephone icon"src="assets/telephone.svg" />
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="cake icon"src="assets/cake.svg" />
-                        <img onClick="handleGenerateNewUser();" class="svg-medium" alt="key icon"src="assets/key.svg" />
+                <div id="user-info-container">
+                    <div class="row center gap-20">
+                        <img id="user-image" />
+                        <div id="media-icons">
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="book icon"src="assets/book.svg" />
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="brochure icon"src="assets/brochure.svg" />
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="mail icon"src="assets/mail.svg" />
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="telephone icon"src="assets/telephone.svg" />
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="cake icon"src="assets/cake.svg" />
+                            <img onClick="handleGenerateNewUser();" class="svg-medium" alt="key icon"src="assets/key.svg" />
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="column" id="user-details">
-                        <span class="large-text" id="user-name"></span>
-                        <span class="small-text" id="user-text"></span>
+                    <div class="row">
+                        <div class="column" id="user-details">
+                            <span class="large-text" id="user-name"></span>
+                            <span class="small-text" id="user-text"></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="contact-user">
                 <form class="column" id="contact-user">
-                    <span class="medium-text">Contact Me</span>
+                    <span class="medium-text">Contact Me<span id="form-error"></span></span>
                     <input class="small-input" placeholder="Name" name="name" type="text" />
                     <input class="small-input" placeholder="Email" name="email" type="text" />
                     <textarea class="large-input" placeholder="How can I help?" name="message" type="text"></textarea>
                     <input class="primary-button" value="Submit" type="submit" />
                 </form>
+                <div style="display: none;" id="success-banner">
+                    <span class="medium-text" >Success! Your Message Has Been Saved!</span>
+                    <button class="primary-button">Send Another Message</button>
+                </div>
             </div>
         </main>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
