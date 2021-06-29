@@ -1,0 +1,150 @@
+@import url("//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+body,
+html,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+nav {
+  align-items: center;
+  background-color: lightblue;
+  display: flex;
+  height: 70px;
+  padding-left: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+#footer-links > a {
+  margin: 10px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#footer-links {
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+#media-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.large-text {
+  font-size: 32px;
+}
+
+.medium-text {
+  font-size: 25px;
+}
+
+.small-text {
+  font-size: 18px;
+}
+
+.small-input {
+  border: none;
+  border-bottom: black solid 2px;
+  font-size: 18px;
+  height: 25px;
+}
+
+.large-input {
+  border-radius: 0;
+  border: black solid 2px;
+  height: 75px;
+}
+
+.svg-medium {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+    justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.primary-button {
+    border-radius: 0;
+    background-color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+#user-image {
+  height: 144px;
+  width: 144px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+#user-information {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-user {
+  gap: 20px;
+  width: 100%;
+}
+
+#user-name {
+    padding-top: 20px;
+}
+
+#form-error {
+    color: red;
+    margin-left: 10px;
+}
+
+#form-success {
+  color: green;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+      margin: 20px;
+      flex-direction: column;
+    }
+  }
+
+@media only screen and (max-width: 1200px) {
+  main {
+    margin: 20px;
+  }
+}
