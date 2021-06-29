@@ -21,15 +21,15 @@ nav {
     font-weight: 900;
 }
 
-.text-large {
+.large-text {
     font-size: 32px;
 }
 
-.text-medium {
+.medium-text {
     font-size: 25px;
 }
 
-.text-small {
+.small-text {
     font-size: 18px;
 }
 
@@ -43,4 +43,16 @@ nav {
 .row {
     display: flex;
     flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-image {
+    height: 144px;
+    width: 144px;
+    overflow: hidden;
+    border-radius: 100px;
 }
