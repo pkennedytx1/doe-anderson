@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div id="contact-user">
-                <form class="column" id="contact-user">
+                <form onSubmit="event.preventDefault();handleFormSubmit(event);" class="column" id="contact-user">
                     <span class="medium-text">Contact Me<span id="form-error"></span></span>
                     <input class="small-input" placeholder="Name" name="name" type="text" />
                     <input class="small-input" placeholder="Email" name="email" type="text" />
