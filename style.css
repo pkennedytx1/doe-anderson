@@ -17,6 +17,22 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
+.bold {
+    font-weight: 900;
+}
+
+.text-large {
+    font-size: 32px;
+}
+
+.text-medium {
+    font-size: 25px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
 .svg-medium {
     height: 28px;
     width: 28px;
